@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/assets/cookie-consent.js"></script>
+
+<!-- global-footer-css -->
+<link rel="stylesheet" href="/assets/global-footer.css">
+<!-- ad-slot-css -->
+<link rel="stylesheet" href="/assets/ads.css">
+<!-- AD NETWORK: paste your ad network's header/verification/auto-ads script here (e.g. Google AdSense) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Image Resizer | Toolrua</title>
+<meta name="description" content="Resize an image to exact dimensions or a percentage, right in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="stylesheet" href="css/imgtool.css">
+<link rel="canonical" href="https://toolrua.netlify.app/tools/image-tools/image-resizer.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="https://toolrua.netlify.app/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="https://toolrua.netlify.app/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Toolrua">
+<meta property="og:title" content="Image Resizer | Toolrua">
+<meta property="og:description" content="Resize an image to exact dimensions or a percentage, right in your browser.">
+<meta property="og:url" content="https://toolrua.netlify.app/tools/image-tools/image-resizer.html">
+<meta property="og:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Image Resizer | Toolrua">
+<meta name="twitter:description" content="Resize an image to exact dimensions or a percentage, right in your browser.">
+<meta name="twitter:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Image Resizer",
+  "url": "https://toolrua.netlify.app/tools/image-tools/image-resizer.html",
+  "description": "Resize an image to exact dimensions or a percentage, right in your browser.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (Web-based)",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Toolrua",
+    "url": "https://toolrua.netlify.app/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Toolrua",
+      "item": "https://toolrua.netlify.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Image Tools",
+      "item": "https://toolrua.netlify.app/tools/image-tools/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Image Resizer",
+      "item": "https://toolrua.netlify.app/tools/image-tools/image-resizer.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Image Resizer free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Image Resizer is completely free with no watermark or sign-up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are my images uploaded to a server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Image Resizer processes images locally in your browser, so your files never leave your device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What image formats does Image Resizer support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Image Resizer supports common formats like JPG, PNG, and WebP."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Image Resizer reduce image quality?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Image Resizer is designed to preserve as much quality as possible for the operation it performs; some adjustments (like compression) involve an inherent size-vs-quality trade-off that you control."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/cookie-consent.css">
+</head>
+<body data-tool="resize">
+<!-- ad-slot-leaderboard -->
+<div class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your leaderboard / banner ad unit here (728x90 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 728&times;90</span>
+  </div>
+</div>
+<!-- ad-slot-skyscraper -->
+<div class="ad-slot ad-slot--skyscraper ad-slot--left" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+<div class="ad-slot ad-slot--skyscraper ad-slot--right" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="../../index.html" class="brand-link"><span class="brand-mark"><i class="fa-solid fa-wrench"></i></span> Toolrua</a>
+    <span class="crumb">/ Image Tools / Image Resizer</span>
+  </div>
+</div>
+
+<main class="page-wrap">
+  <div class="calc-head">
+    <h1>Image Resizer</h1>
+    <p>Resize any image to exact pixel dimensions or by percentage.</p>
+  </div>
+
+  <div class="calc-layout">
+    <div class="calc-card">
+      <div class="dropzone" id="dropzone">
+        <i class="fa-solid fa-image" style="font-size:28px;color:var(--blue-600);margin-bottom:10px;"></i>
+        <p><strong>Click to upload</strong> or drag &amp; drop an image</p>
+        <input type="file" id="fileInput" accept="image/*" hidden>
+      </div>
+      <div class="file-info" id="fileInfo" style="display:none;">
+        <i class="fa-solid fa-image" style="color:var(--blue-600)"></i>
+        <span id="fileName"></span>
+        <button class="remove" id="removeFile">Remove</button>
+      </div>
+
+      <div id="resizeArea" style="display:none;">
+        <div class="stage-scroll"><img id="preview" alt="preview"></div>
+        <p class="hint" id="origDims" style="margin:12px 0;"></p>
+
+        <div class="mode-tabs" id="modeTabs">
+          <button class="active" data-mode="pixels">Exact pixels</button>
+          <button data-mode="percent">Percentage</button>
+        </div>
+
+        <div id="pixelFields" class="field-row">
+          <div class="field"><label>Width (px)</label><input type="number" id="widthInput"></div>
+          <div class="field"><label>Height (px)</label><input type="number" id="heightInput"></div>
+        </div>
+        <div id="percentField" class="field" style="display:none;">
+          <label>Scale <span id="scaleVal">100%</span></label>
+          <input type="range" id="scaleInput" min="5" max="200" value="100">
+        </div>
+        <label style="display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--ink-700);margin-bottom:16px;">
+          <input type="checkbox" id="lockAspect" checked> Lock aspect ratio
+        </label>
+
+        <button class="calc-btn" id="resizeBtn">Resize &amp; download</button>
+        <div class="progress-bar" id="progressBar"><div class="fill" id="progressFill"></div></div>
+        <div class="download-box" id="downloadBox">
+          <i class="fa-solid fa-circle-check" style="color:var(--green)"></i>
+          <span class="name" id="downloadName">Ready</span>
+          <a id="downloadLink" download>Download image</a>
+        </div>
+      </div>
+    </div>
+    <aside class="side-card" id="calcSidebar"></aside>
+  </div>
+</main>
+
+<script src="js/imgtool-common.js"></script>
+<script>
+  let currentImg = null, currentFile = null, aspect = 1;
+  let mode = 'pixels';
+
+  async function handleFile(file) {
+    currentFile = file;
+    document.getElementById('fileInfo').style.display = 'flex';
+    document.getElementById('fileName').textContent = file.name + ' • ' + formatBytes(file.size);
+    document.getElementById('dropzone').style.display = 'none';
+    document.getElementById('downloadBox').classList.remove('show');
+
+    const { img, url } = await loadImageFromFile(file);
+    currentImg = img;
+    aspect = img.naturalWidth / img.naturalHeight;
+    document.getElementById('preview').src = url;
+    document.getElementById('origDims').textContent = `Original size: ${img.naturalWidth} × ${img.naturalHeight}px`;
+    document.getElementById('widthInput').value = img.naturalWidth;
+    document.getElementById('heightInput').value = img.naturalHeight;
+    document.getElementById('resizeArea').style.display = 'block';
+  }
+
+  document.getElementById('modeTabs').addEventListener('click', (e) => {
+    const btn = e.target.closest('button'); if (!btn) return;
+    document.querySelectorAll('#modeTabs button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active'); mode = btn.dataset.mode;
+    document.getElementById('pixelFields').style.display = mode === 'pixels' ? 'grid' : 'none';
+    document.getElementById('percentField').style.display = mode === 'percent' ? 'block' : 'none';
+  });
+
+  document.getElementById('widthInput').addEventListener('input', (e) => {
+    if (document.getElementById('lockAspect').checked) {
+      document.getElementById('heightInput').value = Math.round(e.target.value / aspect);
+    }
+  });
+  document.getElementById('heightInput').addEventListener('input', (e) => {
+    if (document.getElementById('lockAspect').checked) {
+      document.getElementById('widthInput').value = Math.round(e.target.value * aspect);
+    }
+  });
+  document.getElementById('scaleInput').addEventListener('input', (e) => {
+    document.getElementById('scaleVal').textContent = e.target.value + '%';
+  });
+
+  document.getElementById('resizeBtn').addEventListener('click', async () => {
+    const progressBar = document.getElementById('progressBar');
+    document.getElementById('progressFill').style.width = '40%';
+    progressBar.classList.add('show');
+
+    let w, h;
+    if (mode === 'pixels') {
+      w = parseInt(document.getElementById('widthInput').value);
+      h = parseInt(document.getElementById('heightInput').value);
+    } else {
+      const scale = parseInt(document.getElementById('scaleInput').value) / 100;
+      w = Math.round(currentImg.naturalWidth * scale);
+      h = Math.round(currentImg.naturalHeight * scale);
+    }
+    if (!w || !h) return;
+
+    const canvas = document.createElement('canvas');
+    canvas.width = w; canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(currentImg, 0, 0, w, h);
+
+    const mime = currentFile.type === 'image/png' ? 'image/png' : 'image/jpeg';
+    const blob = await canvasToBlob(canvas, mime, 0.92);
+    document.getElementById('progressFill').style.width = '100%';
+
+    const url = URL.createObjectURL(blob);
+    document.getElementById('downloadLink').href = url;
+    document.getElementById('downloadLink').download = `resized-${w}x${h}.${mime === 'image/png' ? 'png' : 'jpg'}`;
+    document.getElementById('downloadName').textContent = `${w} × ${h}px • ${formatBytes(blob.size)}`;
+    document.getElementById('downloadBox').classList.add('show');
+    setTimeout(() => progressBar.classList.remove('show'), 500);
+  });
+
+  document.getElementById('removeFile').addEventListener('click', () => {
+    currentImg = null; currentFile = null;
+    document.getElementById('fileInfo').style.display = 'none';
+    document.getElementById('dropzone').style.display = 'block';
+    document.getElementById('resizeArea').style.display = 'none';
+    document.getElementById('fileInput').value = '';
+  });
+
+  setupDropzone('dropzone', 'fileInput', handleFile);
+</script>
+<!-- ad-slot-incontent -->
+<div class="ad-slot ad-slot--incontent" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your in-content ad unit here (300x250 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 300&times;250</span>
+  </div>
+</div>
+
+<section class="tool-guide">
+  <h2>How to use Image Resizer</h2>
+  <ol class="tool-guide__steps">
+      <li>Upload the image you want to edit.</li>
+      <li>Image Resizer processes it directly in your browser using the Canvas API.</li>
+      <li>Preview the result and download the edited image.</li>
+  </ol>
+  <h2>Frequently Asked Questions</h2>
+  <div class="tool-guide__faq">
+      <div class="faq-item">
+        <h3>Is Image Resizer free to use?</h3>
+        <p>Yes, Image Resizer is completely free with no watermark or sign-up.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Are my images uploaded to a server?</h3>
+        <p>No. Image Resizer processes images locally in your browser, so your files never leave your device.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What image formats does Image Resizer support?</h3>
+        <p>Image Resizer supports common formats like JPG, PNG, and WebP.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does Image Resizer reduce image quality?</h3>
+        <p>Image Resizer is designed to preserve as much quality as possible for the operation it performs; some adjustments (like compression) involve an inherent size-vs-quality trade-off that you control.</p>
+      </div>
+  </div>
+</section>
+
+<section class="related-tools">
+  <h2>Related tools</h2>
+  <ul class="related-tools__list">
+      <li><a href="jpg-to-png.html">JPG to PNG</a></li>
+      <li><a href="image-enhancer.html">Image Enhancer</a></li>
+      <li><a href="image-filter.html">Image Filter</a></li>
+      <li><a href="webp-to-jpg.html">WebP to JPG</a></li>
+      <li><a href="webp-to-png.html">WebP to PNG</a></li>
+  </ul>
+</section>
+
+<!-- toolora-global-footer -->
+<footer class="toolora-global-footer">
+  <div class="tgf-links"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-service.html">Terms of Service</a><a href="/disclaimer.html">Disclaimer</a></div>
+  <p class="tgf-copy">&copy; 2026 Toolrua. All rights reserved.</p>
+</footer>
+</body>
+</html>

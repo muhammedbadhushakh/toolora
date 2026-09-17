@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/assets/cookie-consent.js"></script>
+
+<!-- global-footer-css -->
+<link rel="stylesheet" href="/assets/global-footer.css">
+<!-- ad-slot-css -->
+<link rel="stylesheet" href="/assets/ads.css">
+<!-- AD NETWORK: paste your ad network's header/verification/auto-ads script here (e.g. Google AdSense) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HTTP Status Checker | Toolrua</title>
+<meta name="description" content="Check any URL's HTTP status code, content type and response time. Free online tool, no sign-up required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="stylesheet" href="css/webtool.css">
+<link rel="canonical" href="https://toolrua.netlify.app/tools/web-tools/http-status-checker.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="https://toolrua.netlify.app/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="https://toolrua.netlify.app/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Toolrua">
+<meta property="og:title" content="HTTP Status Checker | Toolrua">
+<meta property="og:description" content="Check any URL's HTTP status code, content type and response time. Free online tool, no sign-up required.">
+<meta property="og:url" content="https://toolrua.netlify.app/tools/web-tools/http-status-checker.html">
+<meta property="og:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HTTP Status Checker | Toolrua">
+<meta name="twitter:description" content="Check any URL's HTTP status code, content type and response time. Free online tool, no sign-up required.">
+<meta name="twitter:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "HTTP Status Checker",
+  "url": "https://toolrua.netlify.app/tools/web-tools/http-status-checker.html",
+  "description": "Check any URL's HTTP status code, content type and response time. Free online tool, no sign-up required.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (Web-based)",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Toolrua",
+    "url": "https://toolrua.netlify.app/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Toolrua",
+      "item": "https://toolrua.netlify.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "<a href=\"index.html\">Web &amp; SEO Tools<",
+      "item": "https://toolrua.netlify.app/tools/web-tools/http-status-checker.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does the status code tell me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Codes in the 200s mean success, 300s mean redirects, 400s mean a client-side problem (like a 404 Not Found), and 500s mean a server error — this tool shows the code along with its plain-English meaning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why might a check fail even though the site loads in my browser?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The check is made through a public CORS proxy rather than directly from your machine, so sites that block proxy or bot-like traffic may occasionally return an error here even though they load normally for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it follow redirects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It reports the status of the URL you enter — if that URL redirects, you'll see the redirect status code (3xx) rather than the final destination's code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it works on any modern desktop or mobile browser."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/cookie-consent.css">
+</head>
+<body data-tool="httpstatus">
+<!-- ad-slot-leaderboard -->
+<div class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your leaderboard / banner ad unit here (728x90 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 728&times;90</span>
+  </div>
+</div>
+<!-- ad-slot-skyscraper -->
+<div class="ad-slot ad-slot--skyscraper ad-slot--left" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+<div class="ad-slot ad-slot--skyscraper ad-slot--right" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="../../index.html" class="brand-link"><span class="brand-mark"><i class="fa-solid fa-wrench"></i></span> Toolrua</a>
+    <span class="crumb">/ <a href="index.html">Web &amp; SEO Tools</a> / HTTP Status Checker</span>
+  </div>
+</div>
+
+<main class="page-wrap">
+  <div class="calc-head">
+    <h1>HTTP Status Checker</h1>
+    <p>Check the HTTP status code, content type and response time for any public URL.</p>
+  </div>
+
+  <div class="calc-layout">
+    <div class="calc-card">
+
+      <div class="field">
+        <label>URL</label>
+        <input type="text" id="urlInput" placeholder="e.g. example.com or https://example.com/page" autocomplete="off">
+        <div class="url-echo" id="urlEcho"></div>
+      </div>
+
+      <button class="calc-btn" id="checkBtn">Check status</button>
+
+      <div id="loader" class="loader-inline" style="display:none;"><span class="spinner"></span> Checking URL…</div>
+      <div class="status-msg" id="statusMsg"></div>
+
+      <div class="result-box" id="resultBox">
+        <div class="status-hero">
+          <div class="status-code-big" id="codeBig">—</div>
+          <div class="txt">
+            <strong id="codeLabel">—</strong>
+            <span id="codeUrl"></span>
+          </div>
+        </div>
+        <table class="data-table">
+          <tbody>
+            <tr><th>Content type</th><td class="mono" id="rContentType">—</td></tr>
+            <tr><th>Content length</th><td class="mono" id="rContentLength">—</td></tr>
+            <tr><th>Response time</th><td class="mono" id="rTime">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <aside class="side-card" id="calcSidebar"></aside>
+  </div>
+</main>
+
+<script src="js/webtool-common.js"></script>
+<script>
+
+document.getElementById('urlInput').addEventListener('input', (e) => {
+  const norm = normalizeUrl(e.target.value);
+  document.getElementById('urlEcho').textContent = norm ? 'Will check: ' + norm : '';
+});
+
+function codeClass(code) {
+  if (code >= 200 && code < 300) return 's2';
+  if (code >= 300 && code < 400) return 's3';
+  if (code >= 400 && code < 500) return 's4';
+  if (code >= 500) return 's5';
+  return 's0';
+}
+
+async function doCheck() {
+  const raw = document.getElementById('urlInput').value;
+  const url = normalizeUrl(raw);
+  const box = document.getElementById('resultBox');
+  const loader = document.getElementById('loader');
+
+  box.classList.remove('show');
+  hideStatus('statusMsg');
+
+  if (!url) {
+    showStatus('statusMsg', 'Please enter a valid URL.', false);
+    return;
+  }
+
+  loader.style.display = 'inline-flex';
+
+  try {
+    const data = await fetchViaProxy(url);
+    loader.style.display = 'none';
+
+    const status = data.status || {};
+    const code = parseInt(status.http_code, 10) || 0;
+    const cls = codeClass(code);
+    const label = HTTP_STATUS_TEXT[code] || (code ? 'Unknown status' : 'No response');
+
+    document.getElementById('codeBig').textContent = code || '—';
+    document.getElementById('codeBig').className = 'status-code-big ' + cls;
+    document.getElementById('codeLabel').textContent = label;
+    document.getElementById('codeUrl').textContent = status.url || url;
+    document.getElementById('rContentType').textContent = status.content_type || '—';
+    document.getElementById('rContentLength').textContent = status.content_length != null ? status.content_length + ' bytes' : '—';
+    document.getElementById('rTime').textContent = status.response_time != null ? status.response_time + ' ms' : '—';
+
+    box.classList.add('show');
+    if (code >= 200 && code < 400) {
+      showStatus('statusMsg', 'The URL responded successfully.', true);
+    } else if (code) {
+      showStatus('statusMsg', 'The URL responded with an error status.', false);
+    } else {
+      showStatus('statusMsg', 'Could not determine a status code for this URL.', false);
+    }
+  } catch (err) {
+    loader.style.display = 'none';
+    showStatus('statusMsg', 'Could not reach that URL. Double-check it and try again.', false);
+  }
+}
+
+document.getElementById('checkBtn').addEventListener('click', doCheck);
+document.getElementById('urlInput').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') doCheck();
+});
+
+</script>
+<!-- ad-slot-incontent -->
+<div class="ad-slot ad-slot--incontent" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your in-content ad unit here (300x250 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 300&times;250</span>
+  </div>
+</div>
+
+<section class="tool-guide">
+  <h2>How to use HTTP Status Checker</h2>
+  <ol class="tool-guide__steps">
+      <li>Enter the full URL you want to check (including https://).</li>
+      <li>Click check to request the page.</li>
+      <li>Review the status code, content type and response time returned.</li>
+  </ol>
+  <h2>Frequently Asked Questions</h2>
+  <div class="tool-guide__faq">
+      <div class="faq-item">
+        <h3>What does the status code tell me?</h3>
+        <p>Codes in the 200s mean success, 300s mean redirects, 400s mean a client-side problem (like a 404 Not Found), and 500s mean a server error — this tool shows the code along with its plain-English meaning.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why might a check fail even though the site loads in my browser?</h3>
+        <p>The check is made through a public CORS proxy rather than directly from your machine, so sites that block proxy or bot-like traffic may occasionally return an error here even though they load normally for you.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does it follow redirects?</h3>
+        <p>It reports the status of the URL you enter — if that URL redirects, you'll see the redirect status code (3xx) rather than the final destination's code.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does it work on mobile?</h3>
+        <p>Yes, it works on any modern desktop or mobile browser.</p>
+      </div>
+  </div>
+</section>
+
+<section class="related-tools">
+  <h2>Related tools</h2>
+  <ul class="related-tools__list">
+      <li><a href="dns-lookup.html">DNS Lookup</a></li>
+      <li><a href="dns-propagation-checker.html">DNS Propagation Checker</a></li>
+      <li><a href="ip-lookup.html">IP Lookup</a></li>
+      <li><a href="website-seo-checker.html">Website SEO Checker</a></li>
+  </ul>
+</section>
+
+<!-- toolora-global-footer -->
+<footer class="toolora-global-footer">
+  <div class="tgf-links"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-service.html">Terms of Service</a><a href="/disclaimer.html">Disclaimer</a></div>
+  <p class="tgf-copy">&copy; 2026 Toolrua. All rights reserved.</p>
+</footer>
+</body>
+</html>

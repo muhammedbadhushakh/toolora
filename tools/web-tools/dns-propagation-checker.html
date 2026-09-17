@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/assets/cookie-consent.js"></script>
+
+<!-- global-footer-css -->
+<link rel="stylesheet" href="/assets/global-footer.css">
+<!-- ad-slot-css -->
+<link rel="stylesheet" href="/assets/ads.css">
+<!-- AD NETWORK: paste your ad network's header/verification/auto-ads script here (e.g. Google AdSense) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DNS Propagation Checker | Toolrua</title>
+<meta name="description" content="Check whether a domain's DNS records have propagated across major public DNS resolvers like Google, Cloudflare and Quad9.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="stylesheet" href="css/webtool.css">
+<link rel="canonical" href="https://toolrua.netlify.app/tools/web-tools/dns-propagation-checker.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="https://toolrua.netlify.app/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="https://toolrua.netlify.app/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Toolrua">
+<meta property="og:title" content="DNS Propagation Checker | Toolrua">
+<meta property="og:description" content="Check whether a domain's DNS records have propagated across major public DNS resolvers like Google, Cloudflare and Quad9.">
+<meta property="og:url" content="https://toolrua.netlify.app/tools/web-tools/dns-propagation-checker.html">
+<meta property="og:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DNS Propagation Checker | Toolrua">
+<meta name="twitter:description" content="Check whether a domain's DNS records have propagated across major public DNS resolvers like Google, Cloudflare and Quad9.">
+<meta name="twitter:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "DNS Propagation Checker",
+  "url": "https://toolrua.netlify.app/tools/web-tools/dns-propagation-checker.html",
+  "description": "Check whether a domain's DNS records have propagated across major public DNS resolvers like Google, Cloudflare and Quad9.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (Web-based)",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Toolrua",
+    "url": "https://toolrua.netlify.app/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Toolrua",
+      "item": "https://toolrua.netlify.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "<a href=\"index.html\">Web &amp; SEO Tools<",
+      "item": "https://toolrua.netlify.app/tools/web-tools/dns-propagation-checker.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which resolvers does it check?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Public DNS, Cloudflare, Quad9, AdGuard and OpenDNS, queried directly over DNS-over-HTTPS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does matching answers across all resolvers mean it's \"fully propagated\"?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's a good practical signal — if all five major resolvers agree, most visitors worldwide will see the new record — but it isn't a guarantee for literally every resolver on earth, since some networks run their own private DNS caches."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do resolvers sometimes show different answers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each resolver caches records independently based on the record's TTL (time-to-live), so one may still be serving an old cached value while another has already picked up the change."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it works on any modern desktop or mobile browser."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/cookie-consent.css">
+</head>
+<body data-tool="dnsprop">
+<!-- ad-slot-leaderboard -->
+<div class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your leaderboard / banner ad unit here (728x90 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 728&times;90</span>
+  </div>
+</div>
+<!-- ad-slot-skyscraper -->
+<div class="ad-slot ad-slot--skyscraper ad-slot--left" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+<div class="ad-slot ad-slot--skyscraper ad-slot--right" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="../../index.html" class="brand-link"><span class="brand-mark"><i class="fa-solid fa-wrench"></i></span> Toolrua</a>
+    <span class="crumb">/ <a href="index.html">Web &amp; SEO Tools</a> / DNS Propagation Checker</span>
+  </div>
+</div>
+
+<main class="page-wrap">
+  <div class="calc-head">
+    <h1>DNS Propagation Checker</h1>
+    <p>Compare a domain's DNS answer across several major public resolvers to see if a recent change has propagated.</p>
+  </div>
+
+  <div class="calc-layout">
+    <div class="calc-card">
+
+      <div class="field-row">
+        <div class="field">
+          <label>Domain</label>
+          <input type="text" id="domainInput" placeholder="e.g. example.com" autocomplete="off">
+        </div>
+        <div class="field">
+          <label>Record type</label>
+          <select id="typeSelect">
+            <option value="A">A</option>
+            <option value="AAAA">AAAA</option>
+            <option value="CNAME">CNAME</option>
+            <option value="MX">MX</option>
+            <option value="TXT">TXT</option>
+            <option value="NS">NS</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="calc-btn" id="checkBtn">Check propagation</button>
+
+      <div id="loader" class="loader-inline" style="display:none;"><span class="spinner"></span> Querying public resolvers…</div>
+      <div class="status-msg" id="statusMsg"></div>
+
+      <div class="resolver-grid" id="resolverGrid"></div>
+
+      <p class="hint" style="margin-top:16px;">
+        This queries several major public DNS resolvers directly over DNS-over-HTTPS (Google, Cloudflare, Quad9, AdGuard and OpenDNS).
+        Browsers can't query arbitrary global nameservers the way command-line tools can, so results reflect what each provider's
+        resolver currently has cached — a good practical signal for propagation, even if it's not literally probing every country.
+      </p>
+
+    </div>
+    <aside class="side-card" id="calcSidebar"></aside>
+  </div>
+</main>
+
+<script src="js/webtool-common.js"></script>
+<script>
+
+const RESOLVERS = [
+  {
+    name: 'Google Public DNS', ip: '8.8.8.8',
+    query: (domain, type) => fetch(`https://dns.google/resolve?name=${encodeURIComponent(domain)}&type=${type}`).then(r => r.json()),
+  },
+  {
+    name: 'Cloudflare DNS', ip: '1.1.1.1',
+    query: (domain, type) => fetch(`https://cloudflare-dns.com/dns-query?name=${encodeURIComponent(domain)}&type=${type}`, {
+      headers: { accept: 'application/dns-json' },
+    }).then(r => r.json()),
+  },
+  {
+    name: 'Quad9', ip: '9.9.9.9',
+    query: (domain, type) => fetch(`https://dns.quad9.net:5053/dns-query?name=${encodeURIComponent(domain)}&type=${type}`, {
+      headers: { accept: 'application/dns-json' },
+    }).then(r => r.json()),
+  },
+  {
+    name: 'AdGuard DNS', ip: '94.140.14.14',
+    query: (domain, type) => fetch(`https://dns.adguard-dns.com/resolve?name=${encodeURIComponent(domain)}&type=${type}`, {
+      headers: { accept: 'application/dns-json' },
+    }).then(r => r.json()),
+  },
+  {
+    name: 'OpenDNS', ip: '208.67.222.222',
+    query: (domain, type) => fetch(`https://doh.opendns.com/dns-query?name=${encodeURIComponent(domain)}&type=${type}`, {
+      headers: { accept: 'application/dns-json' },
+    }).then(r => r.json()),
+  },
+];
+
+function renderRow(resolver, state, data) {
+  let body;
+  if (state === 'loading') {
+    body = `<span class="loader-inline" style="margin:0;"><span class="spinner"></span> Querying…</span>`;
+  } else if (state === 'error') {
+    body = `<span class="badge error">Unreachable from browser</span>`;
+  } else if (!data.Answer || data.Answer.length === 0) {
+    body = `<span class="badge warn">No records returned</span>`;
+  } else {
+    body = `<div class="vals">${data.Answer.map(a => escapeHtml(a.data)).join('<br>')}</div>`;
+  }
+  return `
+    <div class="resolver-item" id="resolver-${resolver.ip.replace(/\./g, '_')}">
+      <div class="head"><span class="name">${escapeHtml(resolver.name)}</span><span class="ip">${escapeHtml(resolver.ip)}</span></div>
+      ${body}
+    </div>
+  `;
+}
+
+async function doCheck() {
+  const domain = document.getElementById('domainInput').value.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '');
+  const type = document.getElementById('typeSelect').value;
+  const grid = document.getElementById('resolverGrid');
+  const loader = document.getElementById('loader');
+  hideStatus('statusMsg');
+
+  if (!domain) {
+    showStatus('statusMsg', 'Please enter a domain name.', false);
+    grid.innerHTML = '';
+    return;
+  }
+
+  loader.style.display = 'inline-flex';
+  grid.innerHTML = RESOLVERS.map(r => renderRow(r, 'loading')).join('');
+
+  let successCount = 0;
+  const results = await Promise.all(RESOLVERS.map(async (r) => {
+    try {
+      const data = await r.query(domain, type);
+      if (data.Answer && data.Answer.length) successCount++;
+      return { r, state: 'ok', data };
+    } catch (err) {
+      return { r, state: 'error', data: null };
+    }
+  }));
+
+  loader.style.display = 'none';
+  grid.innerHTML = results.map(({ r, state, data }) => renderRow(r, state, data)).join('');
+
+  if (successCount === 0) {
+    showStatus('statusMsg', 'None of the resolvers returned a record — the record may not exist or hasn\'t propagated yet.', false);
+  } else if (successCount === results.length) {
+    showStatus('statusMsg', `Consistent record found across all ${results.length} reachable resolvers.`, true);
+  } else {
+    showStatus('statusMsg', `Record found on ${successCount} of ${results.length} resolvers — propagation may still be in progress.`, true);
+  }
+}
+
+document.getElementById('checkBtn').addEventListener('click', doCheck);
+document.getElementById('domainInput').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') doCheck();
+});
+
+</script>
+<!-- ad-slot-incontent -->
+<div class="ad-slot ad-slot--incontent" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your in-content ad unit here (300x250 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 300&times;250</span>
+  </div>
+</div>
+
+<section class="tool-guide">
+  <h2>How to use DNS Propagation Checker</h2>
+  <ol class="tool-guide__steps">
+      <li>Enter the domain name you recently changed a DNS record for.</li>
+      <li>Click check to query several major public resolvers at once.</li>
+      <li>Compare the answers each resolver returns to see whether your change has propagated everywhere.</li>
+  </ol>
+  <h2>Frequently Asked Questions</h2>
+  <div class="tool-guide__faq">
+      <div class="faq-item">
+        <h3>Which resolvers does it check?</h3>
+        <p>Google Public DNS, Cloudflare, Quad9, AdGuard and OpenDNS, queried directly over DNS-over-HTTPS.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does matching answers across all resolvers mean it's "fully propagated"?</h3>
+        <p>It's a good practical signal — if all five major resolvers agree, most visitors worldwide will see the new record — but it isn't a guarantee for literally every resolver on earth, since some networks run their own private DNS caches.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why do resolvers sometimes show different answers?</h3>
+        <p>Each resolver caches records independently based on the record's TTL (time-to-live), so one may still be serving an old cached value while another has already picked up the change.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does it work on mobile?</h3>
+        <p>Yes, it works on any modern desktop or mobile browser.</p>
+      </div>
+  </div>
+</section>
+
+<section class="related-tools">
+  <h2>Related tools</h2>
+  <ul class="related-tools__list">
+      <li><a href="dns-lookup.html">DNS Lookup</a></li>
+      <li><a href="ip-lookup.html">IP Lookup</a></li>
+      <li><a href="http-status-checker.html">HTTP Status Checker</a></li>
+      <li><a href="website-seo-checker.html">Website SEO Checker</a></li>
+  </ul>
+</section>
+
+<!-- toolora-global-footer -->
+<footer class="toolora-global-footer">
+  <div class="tgf-links"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-service.html">Terms of Service</a><a href="/disclaimer.html">Disclaimer</a></div>
+  <p class="tgf-copy">&copy; 2026 Toolrua. All rights reserved.</p>
+</footer>
+</body>
+</html>

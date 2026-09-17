@@ -1,0 +1,425 @@
+/* ===============================
+   Toolora - Image to PDF
+=================================*/
+
+.page-header{
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+.page-header h1{
+    font-size:42px;
+    color:#2f5fed;
+    margin-bottom:10px;
+}
+
+.page-header p{
+    color:#697590;
+    font-size:18px;
+}
+
+.converter{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-bottom:60px;
+}
+
+/* Upload Area */
+
+.upload-box{
+
+    background:#ffffff;
+    border:3px dashed #2f5fed;
+    border-radius:22px;
+    padding:70px 30px;
+    text-align:center;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.upload-box:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#3b82f6;
+
+}
+
+.upload-box.dragover{
+
+    background:#eef5ff;
+
+    border-color:#2448c4;
+
+}
+
+.upload-box i{
+
+    font-size:70px;
+
+    color:#2f5fed;
+
+    margin-bottom:20px;
+
+}
+
+.upload-box h2{
+
+    margin-bottom:12px;
+
+}
+
+.browse-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 30px;
+
+    background:#2f5fed;
+
+    color:#fff;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.browse-btn:hover{
+
+    background:#2448c4;
+
+}
+
+/* Preview */
+
+.preview-grid{
+
+    margin-top:45px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.preview-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.preview-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.preview-card img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+.preview-info{
+
+    padding:18px;
+
+}
+
+.preview-info h4{
+
+    font-size:15px;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+.preview-info p{
+
+    margin-top:6px;
+
+    color:#697590;
+
+    font-size:14px;
+
+}
+
+.preview-actions{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:18px;
+
+}
+
+.preview-actions button{
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:10px;
+
+    padding:10px 14px;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+.rotate-btn{
+
+    background:#2f5fed;
+
+    color:#fff;
+
+}
+
+.remove-btn{
+
+    background:#ff4d5e;
+
+    color:#fff;
+
+}
+
+.preview-actions button:hover{
+
+    opacity:.9;
+
+}
+
+/* Buttons */
+
+.controls{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.controls button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+#downloadBtn{
+
+    background:#2f5fed;
+
+    color:#fff;
+
+}
+
+#downloadBtn:hover{
+
+    background:#2448c4;
+
+    transform:translateY(-3px);
+
+}
+
+#clearBtn{
+
+    background:#ff4d5e;
+
+    color:#fff;
+
+}
+
+#clearBtn:hover{
+
+    background:#e0384a;
+
+}
+
+/* Loader */
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.92);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    z-index:9999;
+
+}
+
+.loader.active{
+
+    display:flex;
+
+}
+
+.spinner{
+
+    width:70px;
+
+    height:70px;
+
+    border:6px solid #ddd;
+
+    border-top:6px solid #2f5fed;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+    margin-bottom:20px;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* Footer */
+
+footer{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+/* Dark Mode */
+
+.dark .upload-box{
+
+    background:#162033;
+
+    color:#fff;
+
+}
+
+.dark .preview-card{
+
+    background:#162033;
+
+    color:#fff;
+
+}
+
+.dark .preview-info p{
+
+    color:#c3cbdb;
+
+}
+
+.dark .loader{
+
+    background:rgba(15,23,42,.95);
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.page-header h1{
+
+    font-size:32px;
+
+}
+
+.upload-box{
+
+    padding:45px 20px;
+
+}
+
+.upload-box i{
+
+    font-size:55px;
+
+}
+
+.controls{
+
+    flex-direction:column;
+
+}
+
+.controls button{
+
+    width:100%;
+
+}
+
+.preview-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

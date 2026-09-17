@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/assets/cookie-consent.js"></script>
+
+<!-- global-footer-css -->
+<link rel="stylesheet" href="/assets/global-footer.css">
+<!-- ad-slot-css -->
+<link rel="stylesheet" href="/assets/ads.css">
+<!-- AD NETWORK: paste your ad network's header/verification/auto-ads script here (e.g. Google AdSense) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDF Page Rotator | Toolrua</title>
+
+    <meta name="description"
+        content="Rotate PDF pages online for free. Rotate all pages or selected pages with Toolrua.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/pdf-page-rotator.css">
+
+    <!-- PDF-LIB -->
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js"></script>
+
+<link rel="canonical" href="https://toolrua.netlify.app/tools/PDF-Page-Rotator/">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="https://toolrua.netlify.app/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="https://toolrua.netlify.app/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Toolrua">
+<meta property="og:title" content="PDF Page Rotator | Toolrua">
+<meta property="og:description" content="Rotate PDF pages online for free. Rotate all pages or selected pages with Toolrua.">
+<meta property="og:url" content="https://toolrua.netlify.app/tools/PDF-Page-Rotator/">
+<meta property="og:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PDF Page Rotator | Toolrua">
+<meta name="twitter:description" content="Rotate PDF pages online for free. Rotate all pages or selected pages with Toolrua.">
+<meta name="twitter:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PDF Page Rotator",
+  "url": "https://toolrua.netlify.app/tools/PDF-Page-Rotator/",
+  "description": "Rotate PDF pages online for free. Rotate all pages or selected pages with Toolrua.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (Web-based)",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Toolrua",
+    "url": "https://toolrua.netlify.app/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Toolrua",
+      "item": "https://toolrua.netlify.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "PDF Tools",
+      "item": "https://toolrua.netlify.app/tools/pdf-tools/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "PDF Page Rotator",
+      "item": "https://toolrua.netlify.app/tools/PDF-Page-Rotator/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Rotate PDF Pages free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Rotate PDF Pages is completely free, with no sign-up, watermark, or software install required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my file safe when I use Rotate PDF Pages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Rotate PDF Pages runs entirely in your browser using client-side JavaScript, so your file is never uploaded to a server or stored anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Rotate PDF Pages work on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Rotate PDF Pages works in any modern browser on desktop, phone, or tablet \u2014 no app needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a file size limit for Rotate PDF Pages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rotate PDF Pages can comfortably handle everyday file sizes. Very large files may take a little longer since all processing happens on your own device."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/cookie-consent.css">
+</head>
+
+<body>
+<!-- ad-slot-leaderboard -->
+<div class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your leaderboard / banner ad unit here (728x90 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 728&times;90</span>
+  </div>
+</div>
+<!-- ad-slot-skyscraper -->
+<div class="ad-slot ad-slot--skyscraper ad-slot--left" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+<div class="ad-slot ad-slot--skyscraper ad-slot--right" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+
+    <!--================ NAVBAR ================-->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-file-pdf"></i>
+
+            Toolrua
+
+        </div>
+
+        <nav>
+
+            <a href="../../index.html">Home</a>
+
+            <a href="/tools/pdf-tools/index.html">Tools</a>
+
+            <a href="/about.html">About</a>
+
+        </nav>
+
+    </header>
+
+
+    <!--================ HERO ================-->
+
+    <section class="hero">
+
+        <h1>Rotate PDF Pages</h1>
+
+        <p>
+
+            Rotate all pages or selected pages in your PDF directly in your browser.
+            No uploads. Secure. Fast.
+
+        </p>
+
+    </section>
+
+
+    <!--================ MAIN ================-->
+
+    <main class="container">
+
+        <!-- LEFT -->
+
+        <div class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-upload"></i>
+
+                Upload PDF
+
+            </h2>
+
+            <div id="dropZone" class="drop-zone">
+
+                <input
+                    type="file"
+                    id="pdfInput"
+                    accept=".pdf"
+                    hidden>
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <h3>Drag & Drop PDF</h3>
+
+                <p>or click below</p>
+
+                <button id="browseBtn" class="btn">
+
+                    Browse PDF
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                PDF Information
+
+            </h2>
+
+            <div class="info">
+
+                <div class="row">
+
+                    <span>File</span>
+
+                    <span id="fileName">-</span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Pages</span>
+
+                    <span id="pageCount">0</span>
+
+                </div>
+
+                <div class="row">
+
+                    <span>Size</span>
+
+                    <span id="fileSize">0 MB</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!--================ ROTATE CARD ================-->
+
+    <section class="rotate-card">
+
+        <h2>
+
+            <i class="fa-solid fa-rotate"></i>
+
+            Rotation Options
+
+        </h2>
+
+        <div class="radio-group">
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="mode"
+                    value="all"
+                    checked>
+
+                Rotate All Pages
+
+            </label>
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="mode"
+                    value="custom">
+
+                Rotate Selected Pages
+
+            </label>
+
+        </div>
+
+        <input
+            id="pageInput"
+            type="text"
+            placeholder="Example : 1,3,5">
+
+        <div class="angle-buttons">
+
+            <button class="angle active" data-angle="90">
+
+                90°
+
+            </button>
+
+            <button class="angle" data-angle="180">
+
+                180°
+
+            </button>
+
+            <button class="angle" data-angle="270">
+
+                270°
+
+            </button>
+
+        </div>
+
+        <button id="rotateBtn" class="rotate-btn">
+
+            <i class="fa-solid fa-rotate-right"></i>
+
+            Rotate PDF
+
+        </button>
+
+    </section>
+
+
+    <!--================ PROGRESS ================-->
+
+    <section class="progress-card">
+
+        <div class="progress-text">
+
+            Progress
+
+        </div>
+
+        <div class="progress">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+    </section>
+
+
+    <!--================ DOWNLOAD ================-->
+
+    <section class="download-card">
+
+        <button
+            id="downloadBtn"
+            disabled>
+
+            <i class="fa-solid fa-download"></i>
+
+            Download Rotated PDF
+
+        </button>
+
+    </section>
+
+
+    <!--================ FEATURES ================-->
+
+    <section class="features">
+
+        <div class="feature">
+
+            <i class="fa-solid fa-lock"></i>
+
+            <h3>Secure</h3>
+
+            <p>No file uploads.</p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>Fast</h3>
+
+            <p>Instant browser processing.</p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-laptop"></i>
+
+            <h3>Browser Based</h3>
+
+            <p>No installation required.</p>
+
+        </div>
+
+    </section>
+
+
+    <!--================ FOOTER ================-->
+
+    <!-- ad-slot-incontent -->
+<div class="ad-slot ad-slot--incontent" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your in-content ad unit here (300x250 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 300&times;250</span>
+  </div>
+</div>
+<footer>
+
+        © 2026 Toolrua
+
+        <br>
+
+        Fast • Secure • Free PDF Tools
+
+    
+<section class="tool-guide">
+  <h2>How to use Rotate PDF Pages</h2>
+  <ol class="tool-guide__steps">
+      <li>Click the upload area and choose your file, or drag and drop it in.</li>
+      <li>Rotate PDF Pages processes the file directly in your browser using client-side code — nothing is uploaded to a server.</li>
+      <li>Review the result, then click Download to save it to your device.</li>
+  </ol>
+  <h2>Frequently Asked Questions</h2>
+  <div class="tool-guide__faq">
+      <div class="faq-item">
+        <h3>Is Rotate PDF Pages free to use?</h3>
+        <p>Yes, Rotate PDF Pages is completely free, with no sign-up, watermark, or software install required.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is my file safe when I use Rotate PDF Pages?</h3>
+        <p>Yes. Rotate PDF Pages runs entirely in your browser using client-side JavaScript, so your file is never uploaded to a server or stored anywhere.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does Rotate PDF Pages work on mobile?</h3>
+        <p>Yes, Rotate PDF Pages works in any modern browser on desktop, phone, or tablet — no app needed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is there a file size limit for Rotate PDF Pages?</h3>
+        <p>Rotate PDF Pages can comfortably handle everyday file sizes. Very large files may take a little longer since all processing happens on your own device.</p>
+      </div>
+  </div>
+</section>
+
+<!-- toolora-global-footer -->
+<div class="tgf-links" style="margin-top:10px;"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-service.html">Terms of Service</a><a href="/disclaimer.html">Disclaimer</a></div>
+</footer>
+
+
+
+    <!-- Toast -->
+
+    <div id="toast"></div>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/pdf-page-rotator.js"></script>
+
+</body>
+
+</html>

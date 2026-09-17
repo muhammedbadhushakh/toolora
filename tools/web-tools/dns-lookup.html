@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/assets/cookie-consent.js"></script>
+
+<!-- global-footer-css -->
+<link rel="stylesheet" href="/assets/global-footer.css">
+<!-- ad-slot-css -->
+<link rel="stylesheet" href="/assets/ads.css">
+<!-- AD NETWORK: paste your ad network's header/verification/auto-ads script here (e.g. Google AdSense) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DNS Lookup | Toolrua</title>
+<meta name="description" content="Look up A, AAAA, MX, TXT, NS, CNAME, SOA and CAA DNS records for any domain.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="stylesheet" href="css/webtool.css">
+<link rel="canonical" href="https://toolrua.netlify.app/tools/web-tools/dns-lookup.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="https://toolrua.netlify.app/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="https://toolrua.netlify.app/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Toolrua">
+<meta property="og:title" content="DNS Lookup | Toolrua">
+<meta property="og:description" content="Look up A, AAAA, MX, TXT, NS, CNAME, SOA and CAA DNS records for any domain.">
+<meta property="og:url" content="https://toolrua.netlify.app/tools/web-tools/dns-lookup.html">
+<meta property="og:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DNS Lookup | Toolrua">
+<meta name="twitter:description" content="Look up A, AAAA, MX, TXT, NS, CNAME, SOA and CAA DNS records for any domain.">
+<meta name="twitter:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "DNS Lookup",
+  "url": "https://toolrua.netlify.app/tools/web-tools/dns-lookup.html",
+  "description": "Look up A, AAAA, MX, TXT, NS, CNAME, SOA and CAA DNS records for any domain.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (Web-based)",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Toolrua",
+    "url": "https://toolrua.netlify.app/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Toolrua",
+      "item": "https://toolrua.netlify.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "<a href=\"index.html\">Web &amp; SEO Tools<",
+      "item": "https://toolrua.netlify.app/tools/web-tools/dns-lookup.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which DNS record types can I query?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A, AAAA, CNAME, MX, TXT, NS, SOA, CAA, SRV, and ANY — covering the record types most people need for troubleshooting email, hosting and domain setup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which resolver does this use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google's public DNS-over-HTTPS resolver (dns.google), so results reflect what Google's DNS servers currently have cached for the domain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why might my result differ from what I set in my DNS provider?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DNS changes take time to propagate, and different resolvers around the world can be caching different (older or newer) values until the record's TTL expires everywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it works on any modern desktop or mobile browser."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/cookie-consent.css">
+</head>
+<body data-tool="dnslookup">
+<!-- ad-slot-leaderboard -->
+<div class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your leaderboard / banner ad unit here (728x90 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 728&times;90</span>
+  </div>
+</div>
+<!-- ad-slot-skyscraper -->
+<div class="ad-slot ad-slot--skyscraper ad-slot--left" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+<div class="ad-slot ad-slot--skyscraper ad-slot--right" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="../../index.html" class="brand-link"><span class="brand-mark"><i class="fa-solid fa-wrench"></i></span> Toolrua</a>
+    <span class="crumb">/ <a href="index.html">Web &amp; SEO Tools</a> / DNS Lookup</span>
+  </div>
+</div>
+
+<main class="page-wrap">
+  <div class="calc-head">
+    <h1>DNS Lookup</h1>
+    <p>Query DNS records for any domain using Google's public DNS resolver.</p>
+  </div>
+
+  <div class="calc-layout">
+    <div class="calc-card">
+
+      <div class="field-row">
+        <div class="field">
+          <label>Domain</label>
+          <input type="text" id="domainInput" placeholder="e.g. example.com" autocomplete="off">
+        </div>
+        <div class="field">
+          <label>Record type</label>
+          <select id="typeSelect">
+            <option value="A">A</option>
+            <option value="AAAA">AAAA</option>
+            <option value="CNAME">CNAME</option>
+            <option value="MX">MX</option>
+            <option value="TXT">TXT</option>
+            <option value="NS">NS</option>
+            <option value="SOA">SOA</option>
+            <option value="CAA">CAA</option>
+            <option value="SRV">SRV</option>
+            <option value="ANY">ANY</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="calc-btn" id="lookupBtn">Lookup DNS records</button>
+
+      <div id="loader" class="loader-inline" style="display:none;"><span class="spinner"></span> Querying DNS…</div>
+      <div class="status-msg" id="statusMsg"></div>
+
+      <div class="result-box" id="resultBox">
+        <div id="resultMeta" style="font-size:13px;color:var(--ink-500);margin-bottom:8px;"></div>
+        <table class="data-table" id="resultTable">
+          <thead><tr><th>Name</th><th>Type</th><th>TTL</th><th>Value</th></tr></thead>
+          <tbody id="resultBody"></tbody>
+        </table>
+      </div>
+
+    </div>
+    <aside class="side-card" id="calcSidebar"></aside>
+  </div>
+</main>
+
+<script src="js/webtool-common.js"></script>
+<script>
+
+async function doLookup() {
+  const domain = document.getElementById('domainInput').value.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '');
+  const type = document.getElementById('typeSelect').value;
+  const box = document.getElementById('resultBox');
+  const loader = document.getElementById('loader');
+
+  box.classList.remove('show');
+  hideStatus('statusMsg');
+
+  if (!domain) {
+    showStatus('statusMsg', 'Please enter a domain name.', false);
+    return;
+  }
+
+  loader.style.display = 'inline-flex';
+
+  try {
+    const res = await fetch(`https://dns.google/resolve?name=${encodeURIComponent(domain)}&type=${type}`);
+    const data = await res.json();
+    loader.style.display = 'none';
+
+    const statusText = DNS_STATUS_TEXT[data.Status] || ('Status code ' + data.Status);
+    document.getElementById('resultMeta').textContent =
+      `Query: ${domain} (${type}) — ${statusText}`;
+
+    if (!data.Answer || data.Answer.length === 0) {
+      document.getElementById('resultBody').innerHTML =
+        '<tr><td colspan="4" style="color:var(--ink-500);">No records found for this query.</td></tr>';
+      box.classList.add('show');
+      showStatus('statusMsg', data.Status === 0 ? 'No records of this type exist for the domain.' : statusText, data.Status === 0);
+      return;
+    }
+
+    document.getElementById('resultBody').innerHTML = data.Answer.map((a) => `
+      <tr>
+        <td class="mono">${escapeHtml(a.name)}</td>
+        <td>${escapeHtml(DNS_TYPE_NAMES[a.type] || a.type)}</td>
+        <td>${escapeHtml(a.TTL)}</td>
+        <td class="mono">${escapeHtml(a.data)}</td>
+      </tr>
+    `).join('');
+
+    box.classList.add('show');
+    showStatus('statusMsg', `${data.Answer.length} record(s) found.`, true);
+  } catch (err) {
+    loader.style.display = 'none';
+    showStatus('statusMsg', 'Could not complete the DNS query. Please try again.', false);
+  }
+}
+
+document.getElementById('lookupBtn').addEventListener('click', doLookup);
+document.getElementById('domainInput').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') doLookup();
+});
+
+</script>
+<!-- ad-slot-incontent -->
+<div class="ad-slot ad-slot--incontent" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your in-content ad unit here (300x250 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 300&times;250</span>
+  </div>
+</div>
+
+<section class="tool-guide">
+  <h2>How to use DNS Lookup</h2>
+  <ol class="tool-guide__steps">
+      <li>Enter a domain name (e.g. example.com).</li>
+      <li>Choose the record type you want — A, AAAA, CNAME, MX, TXT, NS, SOA, CAA, SRV, or ANY.</li>
+      <li>Click Lookup to query the record and see the results.</li>
+  </ol>
+  <h2>Frequently Asked Questions</h2>
+  <div class="tool-guide__faq">
+      <div class="faq-item">
+        <h3>Which DNS record types can I query?</h3>
+        <p>A, AAAA, CNAME, MX, TXT, NS, SOA, CAA, SRV, and ANY — covering the record types most people need for troubleshooting email, hosting and domain setup.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Which resolver does this use?</h3>
+        <p>Google's public DNS-over-HTTPS resolver (dns.google), so results reflect what Google's DNS servers currently have cached for the domain.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why might my result differ from what I set in my DNS provider?</h3>
+        <p>DNS changes take time to propagate, and different resolvers around the world can be caching different (older or newer) values until the record's TTL expires everywhere.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does it work on mobile?</h3>
+        <p>Yes, it works on any modern desktop or mobile browser.</p>
+      </div>
+  </div>
+</section>
+
+<section class="related-tools">
+  <h2>Related tools</h2>
+  <ul class="related-tools__list">
+      <li><a href="dns-propagation-checker.html">DNS Propagation Checker</a></li>
+      <li><a href="ip-lookup.html">IP Lookup</a></li>
+      <li><a href="http-status-checker.html">HTTP Status Checker</a></li>
+      <li><a href="website-seo-checker.html">Website SEO Checker</a></li>
+  </ul>
+</section>
+
+<!-- toolora-global-footer -->
+<footer class="toolora-global-footer">
+  <div class="tgf-links"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-service.html">Terms of Service</a><a href="/disclaimer.html">Disclaimer</a></div>
+  <p class="tgf-copy">&copy; 2026 Toolrua. All rights reserved.</p>
+</footer>
+</body>
+</html>

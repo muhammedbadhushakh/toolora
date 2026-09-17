@@ -1,0 +1,84 @@
+/* ============================================================
+   TOOLORA — Shared compact global footer
+   Self-contained so it renders consistently across every tool
+   template, regardless of that page's own CSS variables.
+============================================================ */
+
+.toolora-global-footer {
+  --tgf-border: #e4e9f2;
+  --tgf-ink: #3a4459;
+  --tgf-muted: #8892a6;
+  --tgf-blue: #2f5fed;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  border-top: 1px solid var(--tgf-border);
+  background: #fafbfe;
+  padding: 22px 16px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.toolora-global-footer .tgf-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 18px;
+  margin-bottom: 10px;
+}
+
+.toolora-global-footer .tgf-links a {
+  color: var(--tgf-ink);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.toolora-global-footer .tgf-links a:hover {
+  color: var(--tgf-blue);
+  text-decoration: underline;
+}
+
+.toolora-global-footer .tgf-copy {
+  color: var(--tgf-muted);
+  font-size: 12.5px;
+}
+
+/* ---- Toolora SEO content additions: how-to / FAQ / related-tools ---- */
+.tool-guide, .related-tools {
+  max-width: 760px;
+  margin: 40px auto 0;
+  padding: 24px;
+  background: var(--card-bg, #fff);
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.tool-guide h2, .related-tools h2 {
+  font-size: 1.25rem;
+  margin: 0 0 14px;
+}
+.tool-guide h2 + h2 { margin-top: 28px; }
+.tool-guide__steps {
+  margin: 0 0 8px;
+  padding-left: 22px;
+}
+.tool-guide__steps li { margin-bottom: 8px; line-height: 1.5; }
+.tool-guide__faq .faq-item { margin-bottom: 18px; }
+.tool-guide__faq .faq-item:last-child { margin-bottom: 0; }
+.tool-guide__faq h3 { font-size: 1rem; margin: 0 0 6px; }
+.tool-guide__faq p { margin: 0; line-height: 1.55; color: var(--text-muted, #444); }
+.related-tools__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.related-tools__list li a {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.92rem;
+}
+.related-tools__list li a:hover { border-color: rgba(0,0,0,0.3); }

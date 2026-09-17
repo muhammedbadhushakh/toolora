@@ -1,0 +1,351 @@
+/* ===========================
+   TOOLORA — PDF Unlock
+   Matches shared site theme
+=========================== */
+
+:root{
+  --blue-600:#2f5fed; --blue-700:#2448c4; --blue-50:#eaf1ff;
+  --ink-900:#0d1526; --ink-700:#3a4459; --ink-500:#697590; --ink-300:#c3cbdb;
+  --bg-tint:#eef4fb; --border:#e4e9f2;
+  --purple:#7c5cfc; --purple-bg:#efebff;
+  --green:#22b573; --green-bg:#e4f8ee;
+  --red:#ff4d5e; --red-bg:#ffe9eb;
+  --orange:#f5a524;
+  --radius-lg:18px; --radius-md:12px;
+  --shadow:0 1px 2px rgba(13,21,38,.04), 0 10px 24px -18px rgba(13,21,38,.25);
+  --font:'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:var(--font);
+}
+
+body{
+    background:var(--bg-tint);
+    min-height:100vh;
+    color:var(--ink-900);
+}
+
+/* ================= Header ================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo i{
+    font-size:32px;
+    color:var(--blue-600);
+}
+
+.logo h2{
+    font-size:28px;
+    font-weight:700;
+    color:var(--ink-900);
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:var(--ink-700);
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--blue-600);
+}
+
+/* ================= Hero ================= */
+
+.hero{
+    text-align:center;
+    padding:70px 20px 40px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+    font-weight:800;
+    letter-spacing:-.02em;
+    color:var(--ink-900);
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    color:var(--ink-500);
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* ================= Card ================= */
+
+.card{
+    width:min(900px,92%);
+    margin:40px auto;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:25px;
+    padding:35px;
+    box-shadow:var(--shadow);
+}
+
+/* ================= Upload ================= */
+
+.upload-area{
+    border:3px dashed var(--border);
+    border-radius:18px;
+    padding:60px 20px;
+    text-align:center;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.upload-area:hover{
+    border-color:var(--blue-600);
+    background:var(--blue-50);
+}
+
+.upload-area.drag{
+    border-color:var(--blue-600);
+    background:var(--blue-50);
+}
+
+.upload-area i{
+    font-size:70px;
+    color:var(--orange);
+    margin-bottom:20px;
+}
+
+.upload-area h2{
+    margin-bottom:10px;
+    font-size:28px;
+    color:var(--ink-900);
+}
+
+.upload-area p{
+    color:var(--ink-500);
+    margin-bottom:25px;
+}
+
+.upload-area button{
+    padding:14px 40px;
+    border:none;
+    border-radius:50px;
+    background:var(--blue-600);
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.upload-area button:hover{
+    background:var(--blue-700);
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(47,95,237,.35);
+}
+
+/* ================= File info ================= */
+
+.file-info{
+    margin-top:20px;
+    padding:14px 18px;
+    border-radius:12px;
+    background:var(--bg-tint);
+    border:1px solid var(--border);
+    display:none;
+    align-items:center;
+    gap:12px;
+}
+
+.file-info.visible{
+    display:flex;
+}
+
+.file-info i{
+    font-size:22px;
+    color:var(--blue-600);
+}
+
+.file-info span{
+    font-size:15px;
+    color:var(--ink-700);
+    word-break:break-all;
+}
+
+/* ================= Options ================= */
+
+.options{
+    margin-top:40px;
+    display:grid;
+    gap:22px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group label{
+    margin-bottom:10px;
+    font-weight:600;
+    color:var(--ink-900);
+}
+
+.input-group input{
+    padding:16px;
+    border:1px solid var(--border);
+    outline:none;
+    border-radius:12px;
+    background:#fff;
+    color:var(--ink-900);
+    font-size:16px;
+}
+
+.input-group input:focus{
+    border-color:var(--blue-600);
+}
+
+.input-group input::placeholder{
+    color:var(--ink-300);
+}
+
+.input-group .hint{
+    margin-top:8px;
+    font-size:13px;
+    color:var(--ink-500);
+}
+
+/* ================= Unlock Button ================= */
+
+#unlockBtn{
+    padding:18px;
+    border:none;
+    border-radius:14px;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    background:linear-gradient(155deg,var(--blue-600),var(--blue-700));
+    color:#fff;
+    transition:.3s;
+}
+
+#unlockBtn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 35px rgba(47,95,237,.35);
+}
+
+#unlockBtn:disabled{
+    opacity:.6;
+    cursor:not-allowed;
+    transform:none;
+    box-shadow:none;
+}
+
+/* ================= Progress ================= */
+
+.progress-box{
+    margin-top:35px;
+}
+
+.progress{
+    width:100%;
+    height:14px;
+    background:var(--bg-tint);
+    border-radius:50px;
+    overflow:hidden;
+}
+
+#progressBar{
+    width:0;
+    height:100%;
+    background:linear-gradient(90deg,var(--blue-600),var(--purple));
+    transition:.4s;
+}
+
+#status{
+    margin-top:12px;
+    color:var(--ink-500);
+    text-align:center;
+}
+
+/* ================= Privacy note ================= */
+
+.privacy-note{
+    margin-top:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    color:var(--ink-500);
+    font-size:14px;
+    text-align:center;
+}
+
+.privacy-note i{
+    color:var(--blue-600);
+}
+
+/* ================= Footer ================= */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:var(--ink-500);
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:18px;
+}
+
+nav{
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.card{
+    padding:22px;
+}
+
+.upload-area{
+    padding:40px 15px;
+}
+
+.upload-area i{
+    font-size:55px;
+}
+
+}

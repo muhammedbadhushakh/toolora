@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/assets/cookie-consent.js"></script>
+
+<!-- global-footer-css -->
+<link rel="stylesheet" href="/assets/global-footer.css">
+<!-- ad-slot-css -->
+<link rel="stylesheet" href="/assets/ads.css">
+<!-- AD NETWORK: paste your ad network's header/verification/auto-ads script here (e.g. Google AdSense) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Split PDF | Toolrua</title>
+<meta name="description" content="Split a PDF into individual pages or a custom page range, and download as a ZIP.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="stylesheet" href="css/pdftool.css">
+<link rel="canonical" href="https://toolrua.netlify.app/tools/pdf-tools/split-pdf.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="https://toolrua.netlify.app/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="https://toolrua.netlify.app/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Toolrua">
+<meta property="og:title" content="Split PDF | Toolrua">
+<meta property="og:description" content="Split a PDF into individual pages or a custom page range, and download as a ZIP.">
+<meta property="og:url" content="https://toolrua.netlify.app/tools/pdf-tools/split-pdf.html">
+<meta property="og:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Split PDF | Toolrua">
+<meta name="twitter:description" content="Split a PDF into individual pages or a custom page range, and download as a ZIP.">
+<meta name="twitter:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Split PDF",
+  "url": "https://toolrua.netlify.app/tools/pdf-tools/split-pdf.html",
+  "description": "Split a PDF into individual pages or a custom page range, and download as a ZIP.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (Web-based)",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Toolrua",
+    "url": "https://toolrua.netlify.app/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Toolrua",
+      "item": "https://toolrua.netlify.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "PDF Tools",
+      "item": "https://toolrua.netlify.app/tools/pdf-tools/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Split PDF",
+      "item": "https://toolrua.netlify.app/tools/pdf-tools/split-pdf.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Split PDF free to use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Split PDF is completely free, with no sign-up, watermark, or software install required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my file safe when I use Split PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Split PDF runs entirely in your browser using client-side JavaScript, so your file is never uploaded to a server or stored anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Split PDF work on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Split PDF works in any modern browser on desktop, phone, or tablet \u2014 no app needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a file size limit for Split PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Split PDF can comfortably handle everyday file sizes. Very large files may take a little longer since all processing happens on your own device."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/cookie-consent.css">
+</head>
+<body data-tool="split">
+<!-- ad-slot-leaderboard -->
+<div class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your leaderboard / banner ad unit here (728x90 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 728&times;90</span>
+  </div>
+</div>
+<!-- ad-slot-skyscraper -->
+<div class="ad-slot ad-slot--skyscraper ad-slot--left" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+<div class="ad-slot ad-slot--skyscraper ad-slot--right" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="../../index.html" class="brand-link"><span class="brand-mark"><i class="fa-solid fa-wrench"></i></span> Toolrua</a>
+    <span class="crumb">/ PDF Tools / Split PDF</span>
+  </div>
+</div>
+
+<main class="page-wrap">
+  <div class="calc-head">
+    <h1>Split PDF</h1>
+    <p>Split a PDF into every page as its own file, or pull out a custom page range.</p>
+  </div>
+
+  <div class="calc-layout">
+    <div class="calc-card">
+      <div class="dropzone" id="dropzone">
+        <i class="fa-solid fa-file-arrow-up" style="font-size:28px;color:var(--blue-600);margin-bottom:10px;"></i>
+        <p><strong>Click to upload</strong> or drag &amp; drop a PDF file</p>
+        <button type="button" class="dropzone-browse-btn">Browse Files</button>
+        <input type="file" id="fileInput" accept="application/pdf" hidden>
+      </div>
+      <div class="file-info" id="fileInfo" style="display:none;">
+        <i class="fa-solid fa-file-pdf" style="color:var(--red)"></i>
+        <span id="fileName"></span>
+        <button class="remove" id="removeFile">Remove</button>
+      </div>
+
+      <div id="splitArea" style="display:none;">
+        <div class="mode-tabs" id="splitTabs">
+          <button class="active" data-mode="all">Split into every page</button>
+          <button data-mode="range">Custom page range</button>
+        </div>
+
+        <div class="field" id="rangeField" style="display:none;">
+          <label>Page range (e.g. 1-3, 5, 8-10)</label>
+          <input type="text" id="rangeInput" placeholder="1-3, 5, 8-10">
+          <p class="hint" id="pageCountHint"></p>
+        </div>
+
+        <button class="calc-btn" id="splitBtn" style="margin-top:16px;">Split PDF</button>
+        <div class="progress-bar" id="progressBar"><div class="fill" id="progressFill"></div></div>
+        <div class="download-box" id="downloadBox">
+          <i class="fa-solid fa-circle-check" style="color:var(--green)"></i>
+          <span class="name" id="downloadName">Ready</span>
+          <a id="downloadLink" download>Download ZIP</a>
+        </div>
+      </div>
+    </div>
+    <aside class="side-card" id="calcSidebar"></aside>
+  </div>
+</main>
+
+<script src="vendor/pdf-lib.min.js"></script>
+<script src="vendor/jszip.min.js"></script>
+<script src="js/pdftool-common.js"></script>
+<script type="module">
+  import { loadPdfJsDoc } from './js/pdftool-render.mjs';
+
+  let originalBytes = null;
+  let numPages = 0;
+  let mode = 'all';
+
+  async function handleFile(file) {
+    document.getElementById('fileInfo').style.display = 'flex';
+    document.getElementById('fileName').textContent = file.name + ' • ' + formatBytes(file.size);
+    document.getElementById('dropzone').style.display = 'none';
+    document.getElementById('downloadBox').classList.remove('show');
+
+    originalBytes = await file.arrayBuffer();
+    const pdfjsDoc = await loadPdfJsDoc(originalBytes.slice(0));
+    numPages = pdfjsDoc.numPages;
+    document.getElementById('pageCountHint').textContent = `This PDF has ${numPages} pages.`;
+    document.getElementById('splitArea').style.display = 'block';
+  }
+
+  document.getElementById('splitTabs').addEventListener('click', (e) => {
+    const btn = e.target.closest('button'); if (!btn) return;
+    document.querySelectorAll('#splitTabs button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    mode = btn.dataset.mode;
+    document.getElementById('rangeField').style.display = mode === 'range' ? 'block' : 'none';
+  });
+
+  function parseRanges(str, max) {
+    const pages = new Set();
+    str.split(',').forEach(part => {
+      part = part.trim();
+      if (!part) return;
+      const m = /^(\d+)\s*-\s*(\d+)$/.exec(part);
+      if (m) {
+        for (let i = parseInt(m[1]); i <= parseInt(m[2]); i++) if (i >= 1 && i <= max) pages.add(i);
+      } else {
+        const n = parseInt(part, 10);
+        if (n >= 1 && n <= max) pages.add(n);
+      }
+    });
+    return [...pages].sort((a,b) => a-b);
+  }
+
+  document.getElementById('splitBtn').addEventListener('click', async () => {
+    if (!originalBytes) return;
+    const progressBar = document.getElementById('progressBar');
+    const progressFill = document.getElementById('progressFill');
+    progressBar.classList.add('show'); progressFill.style.width = '10%';
+
+    const srcDoc = await PDFLib.PDFDocument.load(originalBytes);
+    const zip = new JSZip();
+
+    let pageList = mode === 'all'
+      ? Array.from({length: numPages}, (_, i) => i + 1)
+      : parseRanges(document.getElementById('rangeInput').value, numPages);
+
+    if (pageList.length === 0) { alert('Enter a valid page range.'); progressBar.classList.remove('show'); return; }
+
+    for (let i = 0; i < pageList.length; i++) {
+      const newDoc = await PDFLib.PDFDocument.create();
+      const [copiedPage] = await newDoc.copyPages(srcDoc, [pageList[i] - 1]);
+      newDoc.addPage(copiedPage);
+      const bytes = await newDoc.save();
+      zip.file(`page-${pageList[i]}.pdf`, bytes);
+      progressFill.style.width = `${10 + (i / pageList.length) * 80}%`;
+    }
+
+    const zipBlob = await zip.generateAsync({ type: 'blob' });
+    progressFill.style.width = '100%';
+
+    const url = URL.createObjectURL(zipBlob);
+    document.getElementById('downloadLink').href = url;
+    document.getElementById('downloadLink').download = 'split-pages.zip';
+    document.getElementById('downloadName').textContent = `${pageList.length} PDF file${pageList.length>1?'s':''} ready`;
+    document.getElementById('downloadBox').classList.add('show');
+    setTimeout(() => progressBar.classList.remove('show'), 600);
+  });
+
+  document.getElementById('removeFile').addEventListener('click', () => {
+    originalBytes = null;
+    document.getElementById('fileInfo').style.display = 'none';
+    document.getElementById('dropzone').style.display = 'block';
+    document.getElementById('splitArea').style.display = 'none';
+    document.getElementById('fileInput').value = '';
+  });
+
+  setupDropzone('dropzone', 'fileInput', handleFile);
+</script>
+<!-- ad-slot-incontent -->
+<div class="ad-slot ad-slot--incontent" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your in-content ad unit here (300x250 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 300&times;250</span>
+  </div>
+</div>
+
+<section class="tool-guide">
+  <h2>How to use Split PDF</h2>
+  <ol class="tool-guide__steps">
+      <li>Click the upload area and choose your file, or drag and drop it in.</li>
+      <li>Split PDF processes the file directly in your browser using client-side code — nothing is uploaded to a server.</li>
+      <li>Review the result, then click Download to save it to your device.</li>
+  </ol>
+  <h2>Frequently Asked Questions</h2>
+  <div class="tool-guide__faq">
+      <div class="faq-item">
+        <h3>Is Split PDF free to use?</h3>
+        <p>Yes, Split PDF is completely free, with no sign-up, watermark, or software install required.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is my file safe when I use Split PDF?</h3>
+        <p>Yes. Split PDF runs entirely in your browser using client-side JavaScript, so your file is never uploaded to a server or stored anywhere.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does Split PDF work on mobile?</h3>
+        <p>Yes, Split PDF works in any modern browser on desktop, phone, or tablet — no app needed.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is there a file size limit for Split PDF?</h3>
+        <p>Split PDF can comfortably handle everyday file sizes. Very large files may take a little longer since all processing happens on your own device.</p>
+      </div>
+  </div>
+</section>
+
+<section class="related-tools">
+  <h2>Related tools</h2>
+  <ul class="related-tools__list">
+      <li><a href="reorder-pages.html">Reorder PDF Pages</a></li>
+      <li><a href="extract-pages.html">Extract PDF Pages</a></li>
+      <li><a href="pdf-signature.html">PDF Signature</a></li>
+      <li><a href="pdf-viewer.html">PDF Viewer</a></li>
+      <li><a href="compress-pdf.html">Compress PDF</a></li>
+  </ul>
+</section>
+
+<!-- toolora-global-footer -->
+<footer class="toolora-global-footer">
+  <div class="tgf-links"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-service.html">Terms of Service</a><a href="/disclaimer.html">Disclaimer</a></div>
+  <p class="tgf-copy">&copy; 2026 Toolrua. All rights reserved.</p>
+</footer>
+</body>
+</html>

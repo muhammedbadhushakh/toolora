@@ -1,0 +1,206 @@
+/* ===============================
+   Toolora - PDF to JPG
+=================================*/
+
+.pdf-preview{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+}
+
+/* PDF Page Card */
+
+.pdf-page{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.pdf-page:hover{
+    transform:translateY(-8px);
+}
+
+.pdf-page img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    background:#eef4fb;
+}
+
+/* Page Info */
+
+.page-info{
+    padding:15px;
+    text-align:center;
+}
+
+.page-info h4{
+    font-size:14px;
+    color:#0d1526;
+}
+
+/* Upload Box */
+
+.upload-box{
+    background:#ffffff;
+    border:3px dashed #2f5fed;
+    border-radius:22px;
+    padding:70px 30px;
+    text-align:center;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.upload-box:hover{
+    transform:translateY(-5px);
+    border-color:#3b82f6;
+}
+
+.upload-box.dragover{
+    background:#eef5ff;
+    border-color:#2448c4;
+}
+
+.upload-box i{
+    font-size:70px;
+    color:#2f5fed;
+    margin-bottom:20px;
+}
+
+.upload-box h2{
+    margin-bottom:12px;
+}
+
+/* Buttons */
+
+.controls{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.controls button{
+    padding:15px 30px;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+/* Convert Button */
+
+#convertBtn{
+    background:#2f5fed;
+    color:#fff;
+}
+
+#convertBtn:hover{
+    background:#2448c4;
+    transform:translateY(-3px);
+}
+
+/* ZIP Button */
+
+#downloadZipBtn{
+    background:#22b573;
+    color:#fff;
+}
+
+#downloadZipBtn:hover{
+    background:#1a9660;
+    transform:translateY(-3px);
+}
+
+/* Loader */
+
+.loader{
+    position:fixed;
+    inset:0;
+    background:rgba(255,255,255,.92);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    z-index:9999;
+}
+
+.loader.active{
+    display:flex;
+}
+
+.spinner{
+    width:70px;
+    height:70px;
+    border:6px solid #ddd;
+    border-top:6px solid #2f5fed;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin-bottom:20px;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* Footer */
+
+footer{
+    margin-top:60px;
+    text-align:center;
+    padding:25px;
+}
+
+/* Dark Mode */
+
+.dark .pdf-page{
+    background:#162033;
+    color:#fff;
+}
+
+.dark .page-info h4{
+    color:#c3cbdb;
+}
+
+.dark .upload-box{
+    background:#162033;
+    color:#fff;
+}
+
+.dark .loader{
+    background:rgba(15,23,42,.95);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.pdf-preview{
+    grid-template-columns:1fr;
+}
+
+.controls{
+    flex-direction:column;
+}
+
+.controls button{
+    width:100%;
+}
+
+.upload-box{
+    padding:45px 20px;
+}
+
+.upload-box i{
+    font-size:55px;
+}
+}

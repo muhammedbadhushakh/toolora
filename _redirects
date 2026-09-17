@@ -1,0 +1,23 @@
+# Canonical redirects for removed duplicate/legacy tool URLs
+/tools/dev-tools/base64-encoder.html /tools/developer-tools/base64.html 301
+/tools/dev-tools/base64-decoder.html /tools/developer-tools/base64.html 301
+/tools/dev-tools/css-formatter.html /tools/developer-tools/code-beautifier.html 301
+/tools/dev-tools/html-formatter.html /tools/developer-tools/code-beautifier.html 301
+/tools/dev-tools/javascript-formatter.html /tools/developer-tools/code-beautifier.html 301
+/tools/dev-tools/hash-generator.html /tools/developer-tools/hash-generator.html 301
+/tools/dev-tools/json-formatter.html /tools/developer-tools/json-formatter.html 301
+/tools/dev-tools/json-validator.html /tools/developer-tools/json-formatter.html 301
+/tools/dev-tools/password-generator.html /tools/generators/password-generator.html 301
+/tools/dev-tools/regex-tester.html /tools/developer-tools/regex-tester.html 301
+/tools/dev-tools/timestamp-converter.html /tools/converters/epoch-timestamp.html 301
+/tools/dev-tools/url-encoder.html /tools/developer-tools/url-encoder-decoder.html 301
+/tools/dev-tools/url-decoder.html /tools/developer-tools/url-encoder-decoder.html 301
+/tools/dev-tools/uuid-generator.html /tools/developer-tools/uuid-generator.html 301
+/tools/dev-tools/xml-formatter.html /tools/developer-tools/xml-formatter.html 301
+/tools/dev-tools/ /tools/developer-tools/ 301
+/tools/dev-tools /tools/developer-tools/ 301
+/tools/qr-generator/ /tools/generators/qr-code-generator.html 301
+/tools/qr-generator /tools/generators/qr-code-generator.html 301
+/tools/image-tools/favicon-generator.html /tools/generators/favicon-generator.html 301
+/tools/pdf-text-editor/* /tools/pdf-editor/ 301
+/tools/pdf-text-editor /tools/pdf-editor/ 301

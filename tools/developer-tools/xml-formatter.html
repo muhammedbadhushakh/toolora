@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/assets/cookie-consent.js"></script>
+
+<!-- global-footer-css -->
+<link rel="stylesheet" href="/assets/global-footer.css">
+<!-- ad-slot-css -->
+<link rel="stylesheet" href="/assets/ads.css">
+<!-- AD NETWORK: paste your ad network's header/verification/auto-ads script here (e.g. Google AdSense) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>XML Formatter | Toolrua</title>
+<meta name="description" content="Pretty-print and indent XML documents. Free browser-based tool — no install, no sign-up.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="stylesheet" href="css/devtool.css">
+<link rel="canonical" href="https://toolrua.netlify.app/tools/developer-tools/xml-formatter.html">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="https://toolrua.netlify.app/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="https://toolrua.netlify.app/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Toolrua">
+<meta property="og:title" content="XML Formatter | Toolrua">
+<meta property="og:description" content="Pretty-print and indent XML documents. Free browser-based tool — no install, no sign-up.">
+<meta property="og:url" content="https://toolrua.netlify.app/tools/developer-tools/xml-formatter.html">
+<meta property="og:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="XML Formatter | Toolrua">
+<meta name="twitter:description" content="Pretty-print and indent XML documents. Free browser-based tool — no install, no sign-up.">
+<meta name="twitter:image" content="https://toolrua.netlify.app/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "XML Formatter",
+  "url": "https://toolrua.netlify.app/tools/developer-tools/xml-formatter.html",
+  "description": "Pretty-print and indent XML documents. Free browser-based tool — no install, no sign-up.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (Web-based)",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Toolrua",
+    "url": "https://toolrua.netlify.app/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Toolrua",
+      "item": "https://toolrua.netlify.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Developer Tools",
+      "item": "https://toolrua.netlify.app/tools/developer-tools/index.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "XML Formatter",
+      "item": "https://toolrua.netlify.app/tools/developer-tools/xml-formatter.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What happens if my XML is malformed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The formatter validates the document first (using the browser's built-in XML parser) and shows a \"could not parse\" message if it isn't well-formed, rather than guessing at a layout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it validate against a schema (XSD/DTD)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — it checks that the XML is well-formed (correctly nested and closed tags), not that it matches a specific schema."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my code or data sent to a server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Formatting runs entirely client-side in your browser, so nothing you paste in is uploaded or logged."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it works in any modern mobile or desktop browser."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/assets/cookie-consent.css">
+</head>
+<body data-tool="xmlformat">
+<!-- ad-slot-leaderboard -->
+<div class="ad-slot ad-slot--leaderboard" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your leaderboard / banner ad unit here (728x90 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 728&times;90</span>
+  </div>
+</div>
+<!-- ad-slot-skyscraper -->
+<div class="ad-slot ad-slot--skyscraper ad-slot--left" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+<div class="ad-slot ad-slot--skyscraper ad-slot--right" aria-label="Advertisement">
+  <span class="ad-slot__label">Ad</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your skyscraper ad unit here (160x600) -->
+    <span class="ad-slot__placeholder">160&times;600</span>
+  </div>
+</div>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="../../index.html" class="brand-link"><span class="brand-mark"><i class="fa-solid fa-wrench"></i></span> Toolrua</a>
+    <span class="crumb">/ Developer Tools / XML Formatter</span>
+  </div>
+</div>
+
+<main class="page-wrap">
+  <div class="calc-head">
+    <h1>XML Formatter</h1>
+    <p>Pretty-print and indent XML documents.</p>
+  </div>
+
+  <div class="calc-layout">
+    <div class="calc-card">
+
+      <textarea class="text-area" id="inputText" placeholder="<root><item>value</item></root>"></textarea>
+      <div class="toolbar-row"><button class="calc-btn" id="formatBtn" style="width:auto;padding:11px 20px;">Format XML</button></div>
+      <div class="status-msg" id="statusMsg"></div>
+      <textarea class="text-area output" id="outputText" readonly></textarea>
+      <div class="toolbar-row"><button class="copy-btn" id="copyBtn">Copy result</button></div>
+
+    </div>
+    <aside class="side-card" id="calcSidebar"></aside>
+  </div>
+</main>
+
+
+<script src="js/devtool-common.js"></script>
+<script>
+
+function formatXml(xml) {
+  const PADDING = '  ';
+  let formatted = '';
+  let pad = 0;
+  xml = xml.replace(/>\s*</g, '><').trim();
+  const nodes = xml.split(/(?=<)/);
+  nodes.forEach(rawNode => {
+    const node = rawNode.trim();
+    if (!node) return;
+    const isClosing = /^<\//.test(node);
+    const isSelfClosing = /\/>$/.test(node) || /^<\?/.test(node) || /^<!/.test(node);
+
+    if (isClosing) {
+      pad = Math.max(pad - 1, 0);
+      formatted += PADDING.repeat(pad) + node + '\n';
+    } else {
+      formatted += PADDING.repeat(pad) + node + '\n';
+      if (!isSelfClosing) pad++;
+    }
+  });
+  return formatted.trim();
+}
+document.getElementById('formatBtn').addEventListener('click', () => {
+  const raw = document.getElementById('inputText').value;
+  try {
+    const doc = new DOMParser().parseFromString(raw, 'application/xml');
+    const errNode = doc.querySelector('parsererror');
+    if (errNode) throw new Error('malformed XML');
+    document.getElementById('outputText').value = formatXml(raw);
+    showStatus('statusMsg', 'XML formatted', true);
+  } catch (err) {
+    showStatus('statusMsg', 'Could not parse XML — check it is well-formed.', false);
+  }
+});
+document.getElementById('copyBtn').addEventListener('click', (e) => copyToClipboard(document.getElementById('outputText').value, e.target));
+
+</script>
+<!-- ad-slot-incontent -->
+<div class="ad-slot ad-slot--incontent" aria-label="Advertisement">
+  <span class="ad-slot__label">Advertisement</span>
+  <div class="ad-slot__unit">
+    <!-- AD NETWORK CODE: paste your in-content ad unit here (300x250 or responsive) -->
+    <span class="ad-slot__placeholder">Ad space &middot; 300&times;250</span>
+  </div>
+</div>
+
+<section class="tool-guide">
+  <h2>How to use XML Formatter</h2>
+  <ol class="tool-guide__steps">
+      <li>Paste your minified or messy XML into the input box.</li>
+      <li>Click Format XML to indent and re-structure it with consistent 2-space nesting.</li>
+      <li>Copy the formatted output.</li>
+  </ol>
+  <h2>Frequently Asked Questions</h2>
+  <div class="tool-guide__faq">
+      <div class="faq-item">
+        <h3>What happens if my XML is malformed?</h3>
+        <p>The formatter validates the document first (using the browser's built-in XML parser) and shows a "could not parse" message if it isn't well-formed, rather than guessing at a layout.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does it validate against a schema (XSD/DTD)?</h3>
+        <p>No — it checks that the XML is well-formed (correctly nested and closed tags), not that it matches a specific schema.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is my code or data sent to a server?</h3>
+        <p>No. Formatting runs entirely client-side in your browser, so nothing you paste in is uploaded or logged.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does it work on mobile?</h3>
+        <p>Yes, it works in any modern mobile or desktop browser.</p>
+      </div>
+  </div>
+</section>
+
+<section class="related-tools">
+  <h2>Related tools</h2>
+  <ul class="related-tools__list">
+      <li><a href="/tools/generators/password-generator.html">Password Generator</a></li>
+      <li><a href="base64.html">Base64 Encoder/Decoder</a></li>
+      <li><a href="json-formatter.html">JSON Formatter</a></li>
+      <li><a href="code-beautifier.html">Code Beautifier</a></li>
+      <li><a href="regex-tester.html">Regex Tester</a></li>
+  </ul>
+</section>
+
+<!-- toolora-global-footer -->
+<footer class="toolora-global-footer">
+  <div class="tgf-links"><a href="/index.html">Home</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy Policy</a><a href="/terms-of-service.html">Terms of Service</a><a href="/disclaimer.html">Disclaimer</a></div>
+  <p class="tgf-copy">&copy; 2026 Toolrua. All rights reserved.</p>
+</footer>
+</body>
+</html>

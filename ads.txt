@@ -1,0 +1,11 @@
+# ads.txt for toolrua.netlify.app
+#
+# Once you sign up with an ad network, they will give you an authorized-seller
+# line to add here. This file must live at the domain root
+# (https://toolrua.netlify.app/ads.txt) and tells advertisers which sellers
+# are allowed to sell ad space on your site — most networks (including
+# Google AdSense) will not serve ads reliably without it.
+#
+# Example line for Google AdSense (replace pub-0000000000000000 with your
+# real publisher ID from your AdSense account):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

@@ -1,0 +1,66 @@
+/* ============================================================
+   TOOLORA — Shared cookie consent banner
+   Self-contained so it renders consistently across every template.
+============================================================ */
+.tcc-banner {
+  --tcc-ink: #0d1526;
+  --tcc-muted: #5b6478;
+  --tcc-border: #e4e9f2;
+  --tcc-blue: #2f5fed;
+  --tcc-blue-dark: #2448c4;
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 999;
+  background: #fff;
+  border-top: 1px solid var(--tcc-border);
+  box-shadow: 0 -8px 24px rgba(13,21,38,.08);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  padding: 16px 20px;
+  display: none;
+}
+.tcc-banner.show { display: block; }
+.tcc-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.tcc-text {
+  flex: 1 1 320px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--tcc-muted);
+}
+.tcc-text strong { color: var(--tcc-ink); }
+.tcc-text a { color: var(--tcc-blue); text-decoration: underline; }
+.tcc-actions {
+  display: flex;
+  gap: 10px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+}
+.tcc-btn {
+  font: 700 13.5px/1 'Plus Jakarta Sans', system-ui, sans-serif;
+  border-radius: 9px;
+  padding: 11px 18px;
+  border: 1px solid var(--tcc-border);
+  background: #fff;
+  color: var(--tcc-ink);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.tcc-btn.tcc-accept {
+  background: var(--tcc-blue);
+  border-color: var(--tcc-blue);
+  color: #fff;
+}
+.tcc-btn.tcc-accept:hover { background: var(--tcc-blue-dark); }
+.tcc-btn.tcc-decline:hover { background: #f7f9fc; }
+
+@media (max-width: 600px) {
+  .tcc-inner { flex-direction: column; align-items: stretch; text-align: left; }
+  .tcc-actions { width: 100%; }
+  .tcc-actions .tcc-btn { flex: 1 1 0; text-align: center; }
+}

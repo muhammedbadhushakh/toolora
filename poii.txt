@@ -1,0 +1,12 @@
+
+
+
+PDF Splitter
+PDF Password Protector
+PDF Page Rotator
+PDF Unlock
+
+Remove password protection from PDFs (when the user knows the password)
+
+
+ create website for PDF Merger.using html,js,css. also seperate file. premeom look website toolora
